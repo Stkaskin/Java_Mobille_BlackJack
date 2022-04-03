@@ -1,5 +1,6 @@
-package com.stkaskin.gameblack;
+package com.stkaskin.gameblack.model;
 
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -11,8 +12,11 @@ public class player {
     public  boolean win = false;
     public  boolean lose = false;
     public  ArrayList<cart> carts = new ArrayList<cart>();
-    public  ArrayList puans = new ArrayList();
+    public  ArrayList<risk> puans = new ArrayList();
     public TextView view;
+    public TextView view_puan;
+    public TextView view_durum;
+    public ImageView view_image;
     public  boolean goster=false;
 
 

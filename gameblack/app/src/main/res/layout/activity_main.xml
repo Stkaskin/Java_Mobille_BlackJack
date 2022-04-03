@@ -4,18 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#188100"
+    android:backgroundTintMode="src_in"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="16dp"
-        android:onClick="baslat"
-        android:text="Başlat"
+    <TextView
+        android:id="@+id/kazanan_goster_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#B0FF5722"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_baslat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="baslat"
+        android:text="Başlat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/devam_btn"
@@ -30,97 +44,243 @@
         android:id="@+id/pas_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginBottom="1dp"
         android:onClick="pasgec"
         android:text="Pas"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/player1_imageView" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
         android:text="Player"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/player_kart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="8dp"
         android:text='""'
-        app:layout_constraintStart_toStartOf="@+id/bot3_kart"
-        app:layout_constraintTop_toBottomOf="@+id/bot3_kart" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="184dp"
-        android:text="BOT1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/player1_imageView"
+        app:layout_constraintEnd_toStartOf="@+id/pas_btn" />
 
     <TextView
         android:id="@+id/bot1_kart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:rotation="0"
         android:text='""'
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/bot3_kart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text='""'
-        app:layout_constraintStart_toStartOf="@+id/bot2_kart"
-        app:layout_constraintTop_toBottomOf="@+id/bot2_kart" />
-
-    <TextView
-        android:id="@+id/bot2_kart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text='""'
-        app:layout_constraintStart_toStartOf="@+id/bot1_kart"
-        app:layout_constraintTop_toBottomOf="@+id/bot1_kart" />
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/bot1_imageView" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="60dp"
         android:text="BOT2"
+        app:layout_constraintEnd_toEndOf="@+id/bot2_imageView"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/bot2_imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bot2_kart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text='""'
+        app:layout_constraintEnd_toEndOf="@+id/bot2_imageView"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/bot2_imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/player1_imageView"
+        android:layout_width="208dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toTopOf="@+id/devam_btn"
+        app:srcCompat="@mipmap/table" />
+
+    <ImageView
+        android:id="@+id/bot3_imageView"
+        android:layout_width="208dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="-53dp"
+        android:layout_marginEnd="-100dp"
+        android:layout_marginBottom="38dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/bot3_durum_text"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@mipmap/table" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
+        android:rotation="90"
         android:text="BOT3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/bot3_puan_text" />
 
     <TextView
-        android:id="@+id/kazanan_goster_view"
+        android:id="@+id/bot3_kart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Oyun Devam Ediyor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53"
-        tools:layout_editor_absoluteX="144dp" />
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-40dp"
+        android:rotation="0"
+        android:text='""'
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bot3_imageView"
+
+
+
+        />
+
+    <ImageView
+        android:id="@+id/bot1_imageView"
+        android:layout_width="208dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="273dp"
+        android:rotation="-90"
+        app:layout_constraintBottom_toBottomOf="@+id/bot3_imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bot3_imageView"
+        app:srcCompat="@mipmap/table" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:rotation="90"
+        android:text="BOT1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bot1_imageView" />
+
+    <ImageView
+        android:id="@+id/bot2_imageView"
+        android:layout_width="0dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="42dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toTopOf="@+id/bot2_puan_text"
+        app:layout_constraintEnd_toEndOf="@+id/bot2_puan_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/back_Button_Game"
+        app:layout_constraintTop_toTopOf="@+id/bot2_puan_text"
+        app:layout_constraintVertical_bias="0.421"
+        app:srcCompat="@mipmap/table" />
+
+    <TextView
+        android:id="@+id/player_puan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="19dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/devam_btn"
+        app:layout_constraintStart_toStartOf="@+id/devam_btn" />
+
+    <TextView
+        android:id="@+id/player_durum_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/player_puan_text"
+        app:layout_constraintEnd_toEndOf="@+id/player_puan_text" />
+
+    <TextView
+        android:id="@+id/bot3_puan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="252dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bot1_puan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/bot1_imageView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/back_Button_Game"
+        android:layout_width="78dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:onClick="back_Button_Game_Click"
+        android:text="ÇIK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bot2_imageView" />
+
+    <TextView
+        android:id="@+id/bot2_puan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="114dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/bot1_imageView"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/player_kart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bot1_durum_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="3dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bot1_imageView" />
+
+    <TextView
+        android:id="@+id/bot3_durum_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="38dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bot3_imageView" />
+
+    <TextView
+        android:id="@+id/bot2_durum_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

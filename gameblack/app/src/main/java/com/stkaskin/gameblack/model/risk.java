@@ -1,4 +1,4 @@
-package com.stkaskin.gameblack;
+package com.stkaskin.gameblack.model;
 
 public class risk {
     public int puan = 0;
@@ -17,8 +17,14 @@ public class risk {
                 return (puan - 11) * 5;
             else
                 return 50 + ((puan - 16) * 10);
+      else if (puan<11){
+          return  0;
+        }
+        else if (puan == 11)
+            return 0;
         else if (risk == 11)
             return 10;
+
 
 
         return 0;

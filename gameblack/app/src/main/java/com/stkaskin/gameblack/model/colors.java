@@ -1,4 +1,4 @@
-package com.stkaskin.gameblack;
+package com.stkaskin.gameblack.model;
 
 import java.util.Locale;
 

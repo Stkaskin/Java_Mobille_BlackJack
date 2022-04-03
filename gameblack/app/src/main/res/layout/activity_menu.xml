@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0101"
+    android:foreground="@mipmap/unnamed"
+    android:foregroundGravity="fill_horizontal|top|left|center_vertical|clip_vertical|right"
+    tools:context=".Menu">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="420dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#0B011C"
+        android:onClick="startGame"
+        android:text="Oyuna Başla"
+        android:textColor="#FAF1F1"
+        android:textColorHighlight="#D5BFBF"
+        android:textColorHint="#E3E1E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-9dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="421dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#0B011C"
+        android:onClick="profile_Go"
+        android:text="Profile Git"
+        android:textColor="#FAF1F1"
+        android:textColorHighlight="#D5BFBF"
+        android:textColorHint="#E3E1E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615"
+        tools:layout_editor_absoluteX="-8dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="407dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#0B011C"
+        android:onClick="back_menu"
+        android:text="Çıkış Yap"
+        android:textColor="#FAF1F1"
+        android:textColorHighlight="#D5BFBF"
+        android:textColorHint="#E3E1E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+</androidx.constraintlayout.widget.ConstraintLayout>

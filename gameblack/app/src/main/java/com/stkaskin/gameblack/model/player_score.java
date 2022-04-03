@@ -1,4 +1,4 @@
-package com.stkaskin.gameblack;
+package com.stkaskin.gameblack.model;
 
 public class player_score {
     public player player;

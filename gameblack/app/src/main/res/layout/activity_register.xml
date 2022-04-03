@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59B140"
+    tools:context=".Register">
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="152dp"
+      android:background="#634545"
+      android:backgroundTint="#8A2A2A"
+      android:backgroundTintMode="add"
+      android:foregroundTint="#291F1F"
+      android:onClick="kayitOl_Click"
+      android:shadowColor="#501212"
+      android:text="Kayıt Ol"
+      android:textColor="#400B0B"
+      android:textColorHighlight="#2E0707"
+      android:textColorHint="#220303"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:rippleColor="#2B0303"
+      app:strokeColor="#400C0C" />
+
+  <EditText
+      android:id="@+id/mail_Register_TextEdit"
+      android:layout_width="239dp"
+      android:layout_height="45dp"
+      android:layout_marginBottom="30dp"
+      android:background="#FBFBFB"
+      android:ems="10"
+      android:hint="Mail"
+      android:inputType="textEmailAddress"
+      android:textColor="#000000"
+      android:textColorHighlight="#D3BEBE"
+      android:textColorHint="#606060"
+      app:layout_constraintBottom_toTopOf="@+id/password_Register_TextEdit"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <EditText
+      android:id="@+id/password_Register_TextEdit"
+      android:layout_width="238dp"
+      android:layout_height="48dp"
+      android:layout_marginBottom="40dp"
+      android:background="#FBFBFB"
+      android:ems="10"
+      android:hint="Parola"
+      android:inputType="textPassword"
+      android:textColor="#000000"
+      android:textColorHighlight="#D3BEBE"
+      android:textColorHint="#606060"
+      app:layout_constraintBottom_toTopOf="@+id/button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:background="#510707"
+      android:onClick="backbtn"
+      android:text="Geri"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#302E2E"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

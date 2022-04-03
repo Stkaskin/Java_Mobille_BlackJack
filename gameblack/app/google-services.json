@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "142319884781",
+    "project_id": "gameblack-e6980",
+    "storage_bucket": "gameblack-e6980.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142319884781:android:0ae36227c00662d93aafe4",
+        "android_client_info": {
+          "package_name": "com.stkaskin.gameblack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142319884781-n5dt0mev0b7rh7u1es0oj5t7anil8o8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTlfgQ-hI87VrSUGJqomV0xKDhJIWb2ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142319884781-n5dt0mev0b7rh7u1es0oj5t7anil8o8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

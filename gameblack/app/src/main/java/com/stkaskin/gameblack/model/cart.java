@@ -1,7 +1,5 @@
-package com.stkaskin.gameblack;
+package com.stkaskin.gameblack.model;
 
-
-import java.util.Locale;
 
 public class cart {
     public   String type;

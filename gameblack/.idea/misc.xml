@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Askin/AndroidStudioProjects/gameblack/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Askin/AndroidStudioProjects/gameblack/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Askin/AndroidStudioProjects/gameblack/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Askin/AndroidStudioProjects/gameblack/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Askin/AndroidStudioProjects/gameblack/app/src/main/res/layout/activity_login.xml" value="0.384375" />
+        <entry key="..\:/Users/Askin/AndroidStudioProjects/gameblack/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Askin/AndroidStudioProjects/gameblack/app/src/main/res/layout/activity_menu.xml" value="0.33" />
+        <entry key="..\:/Users/Askin/AndroidStudioProjects/gameblack/app/src/main/res/layout/activity_profille.xml" value="0.22" />
+        <entry key="..\:/Users/Askin/AndroidStudioProjects/gameblack/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/Askin/AndroidStudioProjects/gameblack/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Askin/AndroidStudioProjects/gameblack/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>
